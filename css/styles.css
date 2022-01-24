@@ -249,7 +249,7 @@ body {
 .site-nav-link .link {
   color: var(--color-text);
 }
-.k .link {
+.link {
   color: var(--color-text-lighter);
 }
 .adress-link .link {
@@ -287,6 +287,9 @@ body {
   padding-bottom: 200px;
   max-width: 1600px;
   margin: 0 auto;
+  background-image: url(../images/background/background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .hero-title {
