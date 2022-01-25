@@ -164,6 +164,37 @@ body {
   width: 270px;
 }
 
+.our-peculiarities-column::before {
+  display: block;
+  content: '';
+  height: 120px;
+  outline: 1px solid red;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+/*-*/
+.our-peculiarities-column:nth-child(1)::before {
+}
+
+.our-peculiarities-column:nth-child(2)::before {
+  background-image: url();
+}
+
+.our-peculiarities-column:nth-child(3)::before {
+  background-image: url();
+}
+.our-peculiarities-column:nth-child(4)::before {
+  background-image: url();
+}
+/*-1-27 sm*/
+
+.icon-antenna::before {
+  background-image: url();
+}
+
+/*-*/
+
 .doing-cards {
   display: flex;
   display: inline-block;
@@ -286,10 +317,14 @@ body {
   padding-top: 200px;
   padding-bottom: 200px;
   max-width: 1600px;
+  height: 600px;
   margin: 0 auto;
-  background-image: url(../images/background/background.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/background/background.jpg);
+
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
 
 .hero-title {
