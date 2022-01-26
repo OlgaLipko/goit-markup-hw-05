@@ -104,6 +104,7 @@ body {
 .contacts-link + .contacts-link {
   margin-left: 50px;
 }
+
 .page-header {
   border-bottom: 1px solid var(--color-line);
 }
@@ -168,31 +169,42 @@ body {
   display: block;
   content: '';
   height: 120px;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
+  margin-bottom: 30px;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+  background-size: 70px 70px;
+  background-color: var(--background-color-command);
 }
 /*-*/
-.our-peculiarities-column:nth-child(1)::before {
+/* .our-peculiarities-column:nth-child(1)::before {
+  background-image: url(../images/svg/antenna\ 1.png);
 }
-
 .our-peculiarities-column:nth-child(2)::before {
-  background-image: url();
+  background-image: url(../images/svg/clock\ 1.png);
 }
-
 .our-peculiarities-column:nth-child(3)::before {
-  background-image: url();
+  background-image: url(../images/svg/diagram\ 1.png);
 }
 .our-peculiarities-column:nth-child(4)::before {
-  background-image: url();
-}
-/*-1-27 sm*/
+  background-image: url(../images/svg/astronaut\ 1.png);
+} */
 
 .icon-antenna::before {
-  background-image: url();
+  background-image: url(../images/svg/antenna\ 1.svg);
 }
 
+.icon-clock::before {
+  background-image: url(../images/svg/clock\ 1.svg);
+}
+.icon-diagram::before {
+  background-image: url(../images/svg/diagram\ 1.svg);
+}
+
+.icon-astronaut::before {
+  background-image: url(../images/svg/astronaut\ 1.svg);
+}
 /*-*/
 
 .doing-cards {
@@ -405,7 +417,8 @@ body {
 }
 
 .what-are-we-doing-header,
-.our-command-header {
+.our-command-header,
+.clients-header {
   color: var(--color-text);
   font-weight: 700;
   font-size: 36px;
@@ -451,4 +464,12 @@ body {
   font-size: 16px;
   line-height: calc(30 / 16);
   letter-spacing: 0.03em;
+}
+.clients-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.clients-item + .clients-item {
+  margin-left: 30px;
 }
