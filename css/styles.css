@@ -54,6 +54,16 @@ body {
 .link {
   text-decoration: none;
 }
+.link .contacts-link {
+  display: flex;
+  align-items: center;
+}
+
+.link:hover svg,
+.link:focus svg {
+  fill: var(--link-color-change);
+}
+
 .list {
   list-style-type: none;
   padding: 0;
@@ -80,6 +90,7 @@ body {
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
   align-items: flex-end;
+  align-items: baseline;
 }
 .contacts {
   display: flex;
@@ -98,13 +109,23 @@ body {
 
 .contacts-link {
   display: flex;
+  flex-direction: row;
   color: var(--color-text-lighter);
+  align-items: center;
+  justify-content: center;
+}
+.contacts-text {
+  display: flex;
+  align-items: center;
 }
 
 .contacts-link + .contacts-link {
   margin-left: 50px;
 }
 
+.link .contacts-link {
+  align-items: center;
+}
 .page-header {
   border-bottom: 1px solid var(--color-line);
 }
@@ -455,7 +476,7 @@ body {
   border: 1px solid #afb1b8;
   box-sizing: border-box;
   border-radius: 4px;
-  padding: 16px 32px;
+
   width: 170px;
   height: 92px;
 }
@@ -467,13 +488,17 @@ body {
 .clients-item:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-color: #2196f3;
-  /* color: var(--acent-color);
-  fill: #2196f3; */
+  fill: #2196f3;
 }
 
 .client-a {
-  padding: 0;
+  display: flex;
   border: none;
+  width: 170px;
+  height: 92px;
+  align-items: baseline;
+  align-items: center;
+  justify-content: center;
 }
 
 .client-a-icon {
@@ -482,8 +507,8 @@ body {
   fill: #afb1b8;
 }
 
-.client-a:hover .client-a-icon,
-.client-a:focus .client-a-icon {
+.client-a:hover,
+.client-a:focus {
   fill: #2196f3;
 }
 
@@ -507,9 +532,19 @@ body {
 }
 .social-net-icon {
   display: flex;
-  width: 20px;
-  height: 20px;
+  width: 44px;
+  height: 44px;
   fill: #afb1b8;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+}
+.social-link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer-container {
@@ -534,19 +569,21 @@ body {
 }
 
 .icon-contacts {
-  display: inline-block;
   width: 16px;
-  height: 12px;
+  height: 16px;
   margin-right: 10px;
   fill: #757575;
 }
+
 .social-net-item:hover,
 .social-net-item:focus {
   background-color: var(--link-color-change);
-  color: #ffffff;
+  fill: #ffffff;
 }
 .social-net-icon:hover,
-.social-net-icon:focus {
+.social-link:hover,
+.social-net-icon:focus,
+.social-link:focus {
   fill: #ffffff;
 }
 
