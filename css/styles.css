@@ -581,10 +581,13 @@ body {
   fill: #ffffff;
 }
 .social-net-icon:hover,
-.social-link:hover,
-.social-net-icon:focus,
+.social-net-icon:focus {
+  fill: #ffffff;
+}
 .social-link:focus {
   fill: #ffffff;
+  border-radius: 50%;
+  background-color: var(--link-color-change);
 }
 
 .footer-social-icon {
