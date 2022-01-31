@@ -80,11 +80,6 @@ body {
 
 /*общее*/
 
-/* .link .contacts-link {
-  display: flex;
-  align-items: center;
-} */
-
 /*ХЕДЕР*/
 .logo {
   color: var(--link-color-change);
@@ -125,10 +120,6 @@ body {
   align-items: flex-end;
   align-items: baseline;
 }
-
-/* .contacts {
-  display: flex;
-} */
 
 .site-nav-link:not(:last-child) {
   margin-right: 50px;
@@ -441,6 +432,7 @@ body {
   height: 44px;
   fill: var(--color-social-link);
 }
+
 .social-link:hover,
 .social-link:focus {
   background-color: #2196f3;
@@ -472,14 +464,15 @@ body {
   border: 1px solid var(--color-social-link);
   box-sizing: border-box;
   border-radius: 4px;
-  fill: currentColor;
 }
-
+.client-icon {
+  fill: var(--color-social-link);
+}
 .client-a:hover,
 .client-a:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-color: var(--link-color-change);
-  fill: #2196f3;
+  fill: var(--link-color-change);
 }
 
 /*постянные клиенты*/
