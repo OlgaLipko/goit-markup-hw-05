@@ -154,6 +154,8 @@ body {
 .contacts-link-tel {
   display: flex;
   align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .icon-contacts {
@@ -470,7 +472,6 @@ body {
 }
 .client-a:hover,
 .client-a:focus {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-color: var(--link-color-change);
   fill: var(--link-color-change);
 }
@@ -592,8 +593,6 @@ body {
 }
 
 .works-examples-info {
-  display: flex;
-  flex-direction: column;
   border-right: var(--line-cards);
   border-left: var(--line-cards);
   border-bottom: var(--line-cards);
