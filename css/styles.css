@@ -615,6 +615,7 @@ body {
 .works-examples-item:nth-child(3n) {
   margin-right: 0px;
 }
+
 .box {
   position: relative;
   overflow: hidden;
@@ -622,21 +623,28 @@ body {
 
 .overlay {
   position: absolute;
+  display: flex;
+  align-items: center;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   transform: translateY(100%);
+}
+.text-overlay {
+  display: flex;
+  align-items: center;
   font-weight: 400;
   font-size: 18px;
   line-height: calc(28 / 18);
   letter-spacing: 0.03em;
   color: var(--color-text-contrast);
   padding: 63px 24px;
-  align-items: center;
   background: rgba(33, 150, 243, 0.9);
 }
-.box:hover .overlay {
+
+.works-examples-card:hover .overlay,
+.works-examples-card:focus .overlay {
   transform: translateY(0);
 }
 
@@ -669,6 +677,7 @@ body {
 }
 
 .works-examples-text {
+  display: flex;
   color: var(--color-text-lighter);
   font-size: 16px;
   line-height: calc(30 / 16);
